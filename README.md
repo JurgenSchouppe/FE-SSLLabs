@@ -12,4 +12,6 @@ The basics are quite simple:
 4 : this scan.sh script can be launched once a week or once a day depending on yur personal needs with crontab for instance.
 5 : from that moment on, the only thing that you need is taht our webserver has access to the $HOMEDIR/scans directory 
 
+                      .....This is work in progress and there are still many things to do......
+
 
