@@ -1,0 +1,167 @@
+	.rating_g {
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+		margin: 15px auto;
+		width: 128px;
+		height: 128px;
+		font-size: 100px;
+		line-height: 128px;
+		font-weight: bold;
+		color: #ffffff;
+		background: url('/ssllabspe/images/rating-green.gif') no-repeat;
+}
+	
+	.rating_a {
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+		margin: 15px auto;
+		width: 128px;
+		height: 128px;
+		font-size: 100px;
+		line-height: 128px;
+		font-weight: bold;
+		color: #ffffff;
+		background: url('/ssllabspe/images/rating-amber.gif') no-repeat;
+	}
+	
+	.rating_r {
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+		margin: 15px auto;
+		width: 128px;
+		height: 128px;
+		font-size: 100px;
+		line-height: 128px;
+		font-weight: bold;
+		color: #ffffff;
+		background: url('/ssllabspe/images/rating-red.gif') no-repeat;
+	}
+
+	.rating_gs {
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+		width: 22px;
+		height: 22px;
+		font-size: 20x;
+		font-weight: bold;
+		color: #ffffff;
+		background: url('/ssllabspe/images/rating-green.gif') no-repeat;
+}
+	
+	.rating_as {
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+		width: 22px;
+		height: 22px;
+		font-size: 20px;
+		font-weight: bold;
+		color: #ffffff;
+		background: url('/ssllabspe/images/rating-amber.gif') no-repeat;
+	}
+	
+	.rating_rs{
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+		width: 22px;
+		height: 22px;
+		font-size: 20px;
+		font-weight: bold;
+		color: #ffffff;
+		background: url('/ssllabspe/images/rating-red.gif') no-repeat;
+	}	
+	.rating_r_icon {
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+		display:inline;
+		font-size: 12px;
+		font-weight: bold;
+		color: #ffffff;
+		background: url('/ssllabspe/images/rating-red.gif') no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.belowGrade {
+		line-height: 16px;
+		font-weight: normal;
+		font-size: 11px;
+		color: grey;
+	}
+	
+	.percentage_g {
+		font-weight: bold;
+		font-size: 28px;
+		color: #7ed84d;
+	}
+	
+	.percentage_a {
+		font-weight: bold;
+		font-size: 28px;
+		color: #ffa100;
+	}
+	
+	.percentage_r {
+		font-weight: bold;
+		font-size: 28px;
+		color: #ff553e;
+	}
+
+.infoBox {
+    background: #fffacd none repeat scroll 0 0;
+    border: 1px solid #bbbbbb;
+    color: #222222;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px;
+    float:top;
+    text-align: center;
+    margin-top: 1px;
+     margin-left: 650px;
+   width: 600px;
+}
+.highlightBox {
+    background: #7ed84d none repeat scroll 0 0;
+    border: 1px solid #888888;
+    color: #222222;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px;
+    float:top;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 650px;
+    width: 600px;
+}
+.noticeBox {
+    background: #cceeff none repeat scroll 0 0;
+    border: 1px solid #bbbbbb;
+    color: #222222;
+    font-weight: bold;
+    padding: 5px;
+    float:top;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 650px;
+    width: 600px;
+}
+
+.warningBox {
+    background: #ffcf79 none repeat scroll 0 0;
+    border: 1px solid #bbbbbb;
+    color: #222222;
+    font-weight: bold;
+    padding: 5px;
+    float:top;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 650px;
+    width: 600px;
+}
+.errorBox {
+    background: #ffcccb none repeat scroll 0 0;
+    border: 1px solid #bbbbbb;
+    color: #222222;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px;
+}
+
