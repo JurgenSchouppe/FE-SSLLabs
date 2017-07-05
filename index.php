@@ -98,6 +98,7 @@ echo "</table>";
 
 
 echo '<br /><br /><a href="http://$IP/tools/">Return</a>';
+	// change $IP with the ip adress or FQDN of your webserver
     closedir($handle);
 } 
 echo "</div>";
