@@ -13,6 +13,7 @@ function includephp() {
 function ReadUrl() {
 	$Url = $_GET['site'];
 	$file2check = file_get_contents("http://$IP/fessllabs/$Url");
+	// change $IP with the ip adress or FQDN of your webserver
 	$attr2check = json_decode($file2check, true);
 }
 
