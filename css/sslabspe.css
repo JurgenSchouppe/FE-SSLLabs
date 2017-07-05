@@ -1,0 +1,34 @@
+#category {
+          list-style:none;
+             }
+#category .item {
+          height:100px;
+          width:100px;
+          padding:5px;
+          margin:5px;
+          background-color:silver;
+          color:white;
+          text-align:center;
+          cursor:pointer;
+          font-size:15pt;
+          display:inline-block;
+}
+#category .item i {
+          font-size:25pt;
+}
+#category .item:hover {
+          background-color:gray;
+}																	            
+#category .item.selected {
+          background-color:blue;
+}
+#description {
+          margin:20px 0 0 45px;
+}
+#titre {
+          margin:20px 0 0 45px;
+          font-size:25pt;
+}
+#siteslist{
+          margin:20px 0 0 45px;
+}
