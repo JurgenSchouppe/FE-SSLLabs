@@ -12,5 +12,4 @@ The basics are quite simple:
 5 : from that moment on, the only thing that you need is that your webserver has access to the $HOMEDIR/scans directory <br>
 
 .....This is work in progress and there are still many things to do......<br>
-
-
+-----Feel free to donate by sending ETher to the folwung Adress : 0xA8435d28f8d1380C03B1bC261dcCaaE82b0297b0 (thx)<br>
