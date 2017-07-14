@@ -43,8 +43,11 @@ $attr2check = $attr2check[0];
         		        echo "<p><b>Simulation $isi\n</b></p>";
 		                foreach ($attr2check['endpoints'][0]['details']['sims']['results'][$isi]['client'] as $field => $value) {
 		                     echo "<p>&emsp;<b>$field :</b>$value</p>\n";
-																												                                              }
-																																	 $isi++;
+				}
+				foreach ($attr2check['endpoints'][0]['details']['sims']['results'][$isi] as $field => $value) {
+                                     echo "<p>&emsp;<b>$field :</b>$value</p>\n";
+				}
+	 		 $isi++;
 	                  }
 
 		echo "</div>";
