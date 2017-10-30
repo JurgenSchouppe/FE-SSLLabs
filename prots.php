@@ -32,35 +32,62 @@ $attr2check = $attr2check[0];
     Hgrade();
 
 	
+        //map array keys
+        //$mapfile2check = file_get_contents('http://136.173.62.86/ssllabspe/ssllabspe.map',true);
+        //$attrfile2check = ($mapfile2check);
 
-	echo "<div class='wrap2'>";
-	    	echo "<div class='proto'>";
-		$ip=0;
-		 $protonr =(count($attr2check['endpoints'][0]['details']['protocols']));
-		        echo "<p><b>Number of supported protocols found :</b>$protonr</p>\n";
-	                 while ($ip <= $protonr -1 ) {
-        		        echo "<p><b>Protocol $ip\n</b></p>";
-		                foreach ($attr2check['endpoints'][0]['details']['protocols'][$ip] as $field => $value) {
-		                     echo "<p>&emsp;<b>$field :</b>$value</p>\n";
-																												                                              }
-																																	 $ip++;
-	                  }
+        echo "<div class='wrap2'>";
+                echo "<div class='proto'>";
+$ip=0;
+$protonr =(count($attr2check['endpoints'][0]['details']['protocols']));
+echo "<p><b>Number of supported protocols found :</b>$protonr</p>";
+echo "<table>";
+echo "<tr>";
+echo "<th>Protocol<th>";
+echo "<th>ID</th>";
+echo "<th>name</th>";
+echo "<th>version</th>";
+echo "</tr>";
+echo "<tr>";
+                //$ip=0;
+                 //$protonr =(count($attr2check['endpoints'][0]['details']['protocols']));
+                 //       echo "<p><b>Number of supported protocols found :</b>$protonr</p>\n";
+                 while ($ip <= $protonr -1 ) {
+	                 echo "<td><p><b>Protocol $ip</b></p></td>";
+                	 foreach ($attr2check['endpoints'][0]['details']['protocols'][$ip] as $field => $value) {
+	        	         echo "<td><p>$value</p></td>";
+                         }
+                         echo "</tr><tr>";
+                          $ip++;
+                          }
+echo "</tr>";
+echo "</table>";
 
-		echo "</div>";
+echo "</div>";
+echo "<div class='suites'>";
 
-	        echo "<div class='suites'>";
-			
-		$is=0;
-		 $suitenr =(count($attr2check['endpoints'][0]['details']['suites']['list']));
-		        echo "<p><b>Number of Cipher Suites found :</b>$suitenr</p>\n";
-	                 while ($is <= $suitenr -1 ) {
-        		        echo "<p><b>Cipher Suite $is\n</b></p>";
-		                foreach ($attr2check['endpoints'][0]['details']['suites']['list'][$is] as $field => $value) {
-		                     echo "<p>&emsp;<b>$field :</b>$value</p>\n";
-																												                                              }
-																																	 $is++;
-	                  }
-               echo "</div>";
-	echo "</div>";
-    echo "</body>";
+$is=0;
+$suitenr =(count($attr2check['endpoints'][0]['details']['suites']['list']));
+echo "<p><b>Number of Cipher Suites found :</b>$suitenr</p>\n";
+echo "<table>";
+echo "<tr>";
+echo "<th>Cipher Suite<th>";
+echo "<th>ID</th>";
+echo "<th>Name</th>";
+echo "<th>Strenght</th>";
+echo "</tr>";
+echo "<tr>";
+                while ($is <= $suitenr -1 ) {
+	                echo "<td><p><b>Cipher Suite $is</b></p></td>";
+        	        foreach ($attr2check['endpoints'][0]['details']['suites']['list'][$is] as $field => $value) {
+	                        echo "<td><p>$value</p></td>";
+                       }
+                       echo "</tr><tr>";
+                       $is++;
+                       }
+echo "</tr>";
+echo "</table>";
+echo "</div>";  
+echo "</div>";
+echo "</body>";
 ?>
