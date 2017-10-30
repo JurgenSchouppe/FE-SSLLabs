@@ -32,28 +32,56 @@ $attr2check = $attr2check[0];
 
     Hgrade();
 
-	
 
-	echo "<div class='wrap2'>";
-	    	echo "<div class='sims'>";
-		$isi=0;
-		 $simsnr =(count($attr2check['endpoints'][0]['details']['sims']['results']));
-		        echo "<p><b>Number of tested Handshakes :</b>$simsnr</p>\n";
-	                 while ($isi <= $simsnr -1 ) {
-        		        echo "<p><b>Simulation $isi\n</b></p>";
-		                foreach ($attr2check['endpoints'][0]['details']['sims']['results'][$isi]['client'] as $field => $value) {
-		                     echo "<p>&emsp;<b>$field :</b>$value</p>\n";
-				}
-				foreach ($attr2check['endpoints'][0]['details']['sims']['results'][$isi] as $field => $value) {
-                                     echo "<p>&emsp;<b>$field :</b>$value</p>\n";
-				}
-	 		 $isi++;
-	                  }
+        //map array keys
+        //$mapfile2check = file_get_contents('http://136.173.62.86/ssllabspe/ssllabspe.map',true);
+        //$attrfile2check = ($mapfile2check);
 
-		echo "</div>";
+        echo "<div class='wrap2'>";
+                echo "<div class='sims'>";
+                $isi=0;
+                 $simsnr =(count($attr2check['endpoints'][0]['details']['sims']['results']));
+                        echo "<p><b>Number of tested Handshakes :</b>$simsnr</p>\n";
 
-	echo "</div>";
 
-    echo "</body>";
+echo "<table>";
+echo "<tr>";
+echo "<th>Simulation</th>";
+echo "<th>ID</th>";
+echo "<th>name</th>";
+echo "<th>version</th>";
+echo "<th>Reference</th>";
+echo "<th>ErrorCode</th>";
+echo "<th>attemps</th>";
+echo "<th>protocol ID</th>";
+echo "<th>suite ID</th>";
+echo "<th>kx Inof</th>";
+echo "</tr>";
+echo "<tr>";
+
+                         while ($isi <= $simsnr -1) {
+                                echo "<td><p><b>Simulation $isi</b></p></td>";
+                         foreach ($attr2check['endpoints'][0]['details']['sims']['results'][$isi]['client'] as $field => $value) {
+	                         if (is_Array ($value)) {
+                                 } else {
+                                 echo "<td>$value</td>";
+                                 }
+                                 }
+                                foreach ($attr2check['endpoints'][0]['details']['sims']['results'][$isi] as $field => $value) {
+                                        if (is_Array ($value)) {
+                                        } else {
+                                                 echo "<td>$value</td>";
+                                         }
+                                }
+                                echo "</tr><tr>";
+                        $isi++;
+
+                          }
+echo "</tr>";
+echo "</table>";
+echo "</div>";
+echo "</body>";
 
 ?>
+	
+
